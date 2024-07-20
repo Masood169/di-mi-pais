@@ -1,0 +1,37 @@
+{
+  "sections": {
+    "main": {
+      "type": "contact",
+      "blocks": {
+        "b5ea6547-d6dd-4115-a480-d7bc3cdd9453": {
+          "type": "contact_info",
+          "settings": {
+            "contact_title": "CONNECT WITH US",
+            "phone": "(305) 545 - 6305",
+            "email": "CUSTOMERSERVICE@DEMIPAIS.COM",
+            "address": "11501 NW. 107 TH S.T, 101, MIAMI",
+            "info": "FLORIDA 33178, UNITED STATES",
+            "facebook_url": "https:\/\/www.facebook.com\/demipaisf",
+            "whatsapp_url": "https:\/\/wa.me\/message\/GBG75GZ7GOY3L1",
+            "youtube_url": "https:\/\/www.youtube.com\/channel\/UCTthgK8bbTAiAugux71uCFA",
+            "instagram_url": "https:\/\/www.instagram.com\/demipais\/"
+          }
+        },
+        "eeb9a212-618c-43c2-ad00-caaadfb2bbf5": {
+          "type": "contact_form",
+          "settings": {
+            "contact_form_title": "CONTACT US"
+          }
+        }
+      },
+      "block_order": [
+        "b5ea6547-d6dd-4115-a480-d7bc3cdd9453",
+        "eeb9a212-618c-43c2-ad00-caaadfb2bbf5"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

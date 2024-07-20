@@ -1,0 +1,32 @@
+/*slider tablet*/
+@media screen and (min-width: 768px){
+.homepage-delivery-partners--content .homepage-delivery-partners--center {
+   
+    max-width: 80%!important;}
+}
+@media screen and (min-width: 1000px){
+.homepage-delivery-partners--content .homepage-delivery-partners--center {
+   
+    max-width: 60%!important;}
+}
+@media screen and (max-width: 608px){
+.logoscta img.carousel-cell.carousel-logo, .logoscta .box {
+    width: 100%!important;
+    height: 130px!important;
+}
+}
+  .logoscta .box {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.logoscta img.carousel-cell.carousel-logo {
+    width: 100%;
+    height: auto;
+    text-align: center!important;
+    margin: 0 auto;
+  object-fit: contain!important;
+}

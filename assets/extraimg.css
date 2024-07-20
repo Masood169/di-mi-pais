@@ -1,0 +1,104 @@
+.text-image-bg{
+   overflow: inherit!important;
+ }
+    .text-image-bg a  {
+      
+  border-radius: 10px;
+  background: #fff;
+  color: #de1d09;
+  font-weight: 900 !important;
+  font-family: Barlow Condensed !important;
+  font-size: 1.5em !important;    line-height: 30px;
+  box-shadow: #32325d40 0 13px 27px -5px, #0000004d 0 8px 16px -8px;
+
+}
+  .hide-pc-textimage{
+    display:none;}
+@media screen and (max-width: 767px){
+.homepage-image-text-block--content {
+height: auto!important;
+}
+img.img-textimag {
+    text-align: center;
+    position: relative;
+    margin-top: -100px;
+  width:100%;
+}
+  .homepage-image-text-block--content .image-text-block-row__text-container {
+    padding: 30px!important;
+}
+}
+@media screen and (min-width: 768px){
+  .homepage-image-text-block--content .homepage-image-text-block--left {
+   
+    top: 60%!important;
+}
+  .text-image-bg{
+    background-position:center!important;
+  }
+   img.img-textimag {
+    width: 640px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    z-index: 0;
+}
+
+  .homepage-image-text-block--content .homepage-image-text-block--left {
+    width: 38%!important;
+}
+}
+@media screen and (min-width: 1000px){
+  .text-image-bg{
+    background-position:center!important;
+  }
+   img.img-textimag {
+    width: 720px;
+    height: auto;
+    position: absolute;
+    right: 1%;
+    bottom: 0;
+    z-index: 0;
+}
+ 
+  .homepage-image-text-block--content .homepage-image-text-block--left {
+    width: 34%!important;
+}
+}
+@media screen and (min-width: 1250px){
+  .text-image-bg{
+    background-position:center!important;
+  }
+   img.img-textimag {
+    width: 860px;
+    height: auto;
+    position: absolute;
+    /* left: 0; */
+    right: 5%;
+    /* text-align: end; */
+    bottom: 0;
+    z-index: 0;
+}
+
+}
+@media screen and (min-width: 1400px){
+  .text-image-bg{
+    background-position:center!important;
+  }
+   img.img-textimag {
+    width: 1100px;
+    height: auto;
+    position: absolute;
+    /* left: 0; */
+    right: 5%;
+    /* text-align: end; */
+    bottom: 0;
+    z-index: 0;
+}
+}
+@media screen and (min-width: 1400px){
+  .text-image-bg{
+   height:740px!important;
+  }
+}

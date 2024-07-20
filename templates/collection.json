@@ -1,0 +1,134 @@
+{
+  "wrapper": "div.collection-wrapper",
+  "sections": {
+    "curve": {
+      "type": "curve",
+      "settings": {}
+    },
+    "collection_header": {
+      "type": "template--collection-header",
+      "blocks": {
+        "collection_title": {
+          "type": "collection-title",
+          "settings": {}
+        },
+        "collection_description": {
+          "type": "collection-description",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "collection_title",
+        "collection_description"
+      ],
+      "custom_css": [
+        "h2 {color: #fff !important; font-weight: 900 !important; z-index: 1; position: relative;}",
+        "@media (max-width: 1000px) {h2 {font-size: 2.4em !important; line-height: 50px; }}",
+        "@media (min-width: 1000px) {h2 {font-size: 4em !important; line-height: 70px; }}",
+        "@media (max-width: 768px) {h2 {color: #de1d09 !important; }}"
+      ],
+      "settings": {
+        "collection_image_enable": false
+      }
+    },
+    "product_filtering": {
+      "type": "main-collection-filtering",
+      "custom_css": [
+        "details,select {background: #fff; border: none !important; box-shadow: #32325d40 0 13px 27px -5px, #0000004d 0 8px 16px -8px !important;}",
+        ".facets__form-inner {z-index: 1; position: relative;}"
+      ],
+      "settings": {
+        "desktop_position": "topbar",
+        "enable_filtering": true,
+        "enable_sorting": true
+      }
+    },
+    "main": {
+      "type": "template--collection",
+      "blocks": {
+        "product_title": {
+          "type": "product-card-title",
+          "settings": {}
+        },
+        "product_price": {
+          "type": "product-card-price",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_title",
+        "product_price"
+      ],
+      "settings": {
+        "grid": 4,
+        "grid_mobile": "per_row_two",
+        "rows": 6,
+        "pagination_type": "infinite_scrolling"
+      }
+    },
+    "text-adverts": {
+      "type": "text--text-adverts",
+      "disabled": true,
+      "blocks": {
+        "text-adverts-0": {
+          "type": "text",
+          "settings": {
+            "icon": "takeaway",
+            "heading": "Free shipping",
+            "subheading": "Shout about your unique selling points",
+            "buttonLabel": "",
+            "link": ""
+          }
+        },
+        "text-adverts-1": {
+          "type": "text",
+          "settings": {
+            "icon": "exchange",
+            "heading": "Hassle free returns",
+            "subheading": "Shout about your unique selling points",
+            "buttonLabel": "",
+            "link": ""
+          }
+        },
+        "text-adverts-2": {
+          "type": "text",
+          "settings": {
+            "icon": "recycle",
+            "heading": "Eco friendly packaging",
+            "subheading": "Shout about your unique selling points",
+            "buttonLabel": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text-adverts-0",
+        "text-adverts-1",
+        "text-adverts-2"
+      ],
+      "settings": {
+        "icon-color": "#333333",
+        "text-color": "#000000",
+        "background-color": "#ffffff"
+      }
+    },
+    "image-1": {
+      "type": "image--image",
+      "disabled": true,
+      "settings": {
+        "parallax": true,
+        "hero_size": "small",
+        "text-over-image-width": "full-width"
+      }
+    }
+  },
+  "order": [
+    "curve",
+    "collection_header",
+    "product_filtering",
+    "main",
+    "text-adverts",
+    "image-1"
+  ]
+}

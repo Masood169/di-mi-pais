@@ -1,0 +1,25 @@
+{
+  "sections": {
+    "main": {
+      "type": "about-us",
+      "blocks": {
+        "8dda37c1-675a-4c1d-be2f-48abcec8afb5": {
+          "type": "about_info",
+          "settings": {
+            "about_title": "About Us",
+            "content": "<p><strong>De Mi País<\/strong> was born so you can enjoy the products that make you feel at home. We started in La Ceiba, Honduras and have expanded our production and distribution chain to more than 13 countries around the world, and this is just the beginning! Our mission begins with the highest quality ingredients and is achieved when we bring people together around the table. That’s why, our focus is for more people to discover a piece of Latin American flavors. Today, we work from the city of the sun, Miami, with passion and pride to share our delicious portfolio across all of the USA. From ingredients to packaging, we handle every detail with the latest technology and the highest standards.<\/p>",
+            "about_image": "shopify:\/\/shop_images\/img-about-us.png",
+            "footer_image": "shopify:\/\/shop_images\/footer-image-about-us.png"
+          }
+        }
+      },
+      "block_order": [
+        "8dda37c1-675a-4c1d-be2f-48abcec8afb5"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

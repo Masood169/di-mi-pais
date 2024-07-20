@@ -1,0 +1,63 @@
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer-main": {
+      "type": "footer-main",
+      "blocks": {
+        "footer-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logodemipais.png",
+            "image_max_width": 65,
+            "image_opacity": 100
+          }
+        },
+        "footer-1": {
+          "type": "social",
+          "settings": {
+            "menu_title": "Get connected"
+          }
+        },
+        "10a85646-7b15-40ba-84b3-52e0d4140d64": {
+          "type": "menu",
+          "settings": {
+            "menu_title": "Store policy",
+            "footer_linklist": "store-policy"
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "footer-1",
+        "10a85646-7b15-40ba-84b3-52e0d4140d64"
+      ],
+      "custom_css": [
+        ".footer-bottom__copyright a {font-weight: bold; font-size: 1.3em;}",
+        "h3 {font-weight: bold; font-size: 1.4em;}",
+        ".justify-content-center a {color: #fff !important; font-weight: 700; font-family: \"Barlow condensed\";}",
+        ".footer__back-to-top-chevron {border-color: #fff !important; border-width: 0 4px 4px 0 !important;}",
+        ".footer__block-type--menu a {font-family: \"Barlow Condensed\", sans-serif !important; font-weight: bold; font-size: 1.3em; text-transform: uppercase; line-height: 15px;}",
+        ".footer__block-type--menu ul {margin-top: 26px;}"
+      ],
+      "settings": {
+        "show_back_to_top": true,
+        "back_to_top_text": "BACK TO TOP",
+        "show_borders": false
+      }
+    },
+    "footer-bottom": {
+      "type": "footer-bottom",
+      "custom_css": [],
+      "settings": {
+        "show_methods_of_payment": true,
+        "show_currency_selector": false,
+        "show_locale_selector": true
+      }
+    }
+  },
+  "order": [
+    "footer-main",
+    "footer-bottom"
+  ]
+}

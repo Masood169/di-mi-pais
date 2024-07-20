@@ -1,0 +1,20 @@
+{
+  "sections": {
+    "main": {
+      "type": "template--article",
+      "custom_css": [
+        "h1{color: #e01d09 !important; font-weight: 700;}"
+      ],
+      "settings": {
+        "show_author_name": false,
+        "show_dates": true,
+        "social_sharing_facebook": true,
+        "social_sharing_twitter": true,
+        "social_sharing_pinterest": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

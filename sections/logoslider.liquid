@@ -1,0 +1,143 @@
+{{ 'ctaimages.css' | asset_url | stylesheet_tag }}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
+    <section class="container-large images-cta">
+	<div class="brand-carousels owl-carousel">
+      {% for block in section.blocks %}
+    <div class="box">
+        <a href="{{ block.settings.url }}">
+         <div class="fit">
+           <img class="carousel-cell carousel-logo" src="{{ block.settings.brand_image | img_url: '1000x' }}" alt="{{ block.settings.brand_image.alt }}">
+         </div> 
+        </a>
+    </div>
+    {% endfor %} 
+		
+	</div>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js">
+	</script> 
+	<script>
+	       $('.brand-carousels').owlCarousel({
+	           loop:true,
+	           margin:10,
+	           autoplay:true,
+             autoplayTimeout:4000,
+	           responsive:{
+	               0:{
+	                   items:1
+	               },
+	               600:{
+	                   items:2
+	               },
+	               1000:{
+	                   items:3
+	               },
+                 1200:{
+	                   items:3
+	               }
+	           }
+	       })
+	</script>
+{% schema %}
+{
+  "name": "CTA Images",
+  "settings": [
+  {
+    "type": "header",
+    "content": "Section Padding"
+  },
+  {
+    "type" : "paragraph",
+    "content" : "Desktop / Laptop / tablet"
+  },
+  {
+    "type": "range",
+    "id": "brand_padding_top",
+    "label": "Section Padding Top",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 60
+  },
+  {
+    "type": "range",
+    "id": "brand_padding_bottom",
+    "label": "Section Padding bottom",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 60
+  },
+  {
+    "type" : "paragraph",
+    "content" : "Mobile"
+  },
+  {
+    "type": "range",
+    "id": "brand_padding_top_xs",
+    "label": "Section Padding Top",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 40
+  },
+  {
+    "type": "range",
+    "id": "brand_padding_bottom_xs",
+    "label": "Section Padding bottom",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 40
+  },
+  {
+    "type" : "header",
+    "content" : "Background Color"
+  },
+  {
+    "type" : "checkbox",
+    "id" : "brand_check",
+    "label" : "With Backgorund",
+    "default" : true
+  },
+  {
+    "type" : "color",
+    "id" : "brand_bgcolor",
+    "label" : "Background Color",
+    "default" : "#fff"
+  }
+],
+  "blocks":[
+  {
+    "type": "single_brand",
+    "name": "Single Brand Logo",
+    "settings": [
+    {
+      "type": "image_picker",
+      "id": "brand_image",
+      "label": "Brand Image",
+      "info": "Recommended Size: 170 x 82px"
+    },
+       {
+      "type": "url",
+      "id": "url",
+      "label": "Url Logo"
+    }
+    ]
+  }
+  ],
+  "presets":[
+  {
+    "name": "CTA Images",
+    "category": "CTA Images"
+  }
+  ]
+}
+{% endschema %}
+

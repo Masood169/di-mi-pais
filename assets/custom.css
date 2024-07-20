@@ -1,0 +1,26 @@
+/*
+
+Please add any custom CSS code in here, it will be easier to transfer if updating themes.
+
+We highly recommend labelling changes, or App installs, so these can also be updated or removed as needed.
+
+*/
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  ul.nav.nav-pills,.recipe-title,.content-page-info,.slide-recipe-excerpt,.filter-trigger h3,.slide-recipe-title, .main-icons-with-locale, nav.breadcrumb, h3.type-subheading.type-subheading--1.typography--padding-bottom, h2.collection-header__title, .slider-caption--text, .footer-bottom__copyright, .title-bar.custom-font, .shopify-section-group-footer-group .row, .landuagemobile {
+    background: #00000001;
+}
+.hp-title.homepage-collection-link h3.type-subheading.type-subheading--1 {
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+.collections-list-new a{
+  text-decoration: none;
+}

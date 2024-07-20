@@ -1,0 +1,217 @@
+{{ 'section-video.min.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.url != blank %}
+  <section class="homepage-sections-wrapper container ">
+ <div class="videorecipesection">
+    {% if section.settings.title != blank or section.settings.subheading != blank %}
+    <div class="container infovideo">
+        <div class="col">
+                <div class="titles-video">
+                {% if section.settings.subheading != blank %}
+                  <a style="text-decoration:none;" href="{{ product.metafields.custom.video }}">
+                  <div class="title_recipe_flex">
+                  <h3 class="red-title-recipe">{{ section.settings.subheading }}</h3> 
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAChklEQVR4nO2aPWgUURSFzzUGU0T8aUythW1A0MbSwghCGstYClYSGyt/Cm3S2SmyhZ2sqVKI4d7NiBtRZMFCsRAUC0HRgHYrWByZ2UGjrvHNzO57M+MceO2995vv7c7MvgWaNGnSpEmTH2GEGarcSlaEGdQ9NOnShOnqos6hYW4T7GApjqOuocr6H8Amj/Hf2LUaW+Zwu/W0zK3s1tEyt7ZbL8t0sVsny3SzWw/LzGK3DpaZzW61LTOP3SpbZj675bfMHibZwUEa5mm4QJMWVZ4UgE0tJzVag5qYT3r0MOkPrIs9XMMhdnCKiitUaVOlR5V+YTj3i/CNJq9pojS5TsUZKo5Rsb8YXIRpKs6mth7RZMMbVP61kc7aSmaPMO0OrLJSAoCiu2HFHbgaRv8F/CkL8FLwgYuvJXfgNiZocrsEQ+dddxhhuzNwxaGzw1YYOj9sBaGLw1YIenSwFYAePWyJoccHW0Lo8cOWCNofbAmg/cP+Aq3y2Rts3KuNCYQKFbu8G46wOxzwGo7439I4HA5Ycdo7cAcLAYHlmndglavhgE2WAwDfDQes8sL/Z1ieh7wl9QMAfw1ya2IHBwLAptu64M+yecIOTgQDNszBd6hYLDB0lK68hhf9A5vczDHsUxpObrpoR6nyMDuw3AgB/CDDkC+TIxpChtaKj0tMnmXZIf6BVT44mHibnP84fKvyMrYlF8XklUPd934oXV8aVN7RcI73sAN5TiMHj6xvSvMSwVXM/mWQj1ScZ4Spwj0iTCW14prDeq1idjQ0DqFh328PHV+ouMh17MSIE9dMasc9fu6gfjzDqHu5/KVhmYZLvI+9GHPiHkmvQU//9+EmTZo0aYLx5ztBPnCK227a7QAAAABJRU5ErkJggg==">
+                  </div>
+                  </a>
+                  {% endif %}
+                {% if section.settings.title != blank %}
+                    <a style="text-decoration:none;" href="{{ product.metafields.custom.video }}">
+                      <h2 class="yellow-title-recipe">{{ section.settings.title  }}</h2></a>
+                {% endif %}
+                {% if section.settings.description != blank %}
+                    <div class="description-recipe">
+                  {{ section.settings.description }}
+                  </div>
+                {% endif %}
+                </div>
+            </div>
+        
+    </div>
+    {% endif %}
+
+    <div
+        class="videorecipe video-section--{{ section.id }} {% if section.settings.width_classes != 'video-width--100' %}container{% endif %} video-section {{ section.settings.width_classes }}"
+        data-wetheme-section-type="video--video"
+        data-wetheme-section-id="{{ section.id }}"
+    >
+        <div class="wrapper">
+            <div class="embed-container">
+                <iframe class="video"  title="video" data-vimeo-width="746" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                  gyroscope; picture-in-picture; web-share" title="Recipe DEMIPAIS" width="640" height="360" 
+                  src="https://www.youtube.com/embed/{{ section.settings.url }}?showinfo=0&amp;modestbranding=1&amp;rel=0&amp;
+                  autoplay=0&amp;controls=1&amp;mute=0&amp;playlist={{ section.settings.url }}&amp;cc_load_policy=0&amp;fs=0&amp;iv_load_policy=3&amp;
+                  playsinline=1&amp;branding=0&amp;origin=https%3A%2F%2Fdemipais.com&amp;enablejsapi=1&amp;widgetid=1" id="widget2"></iframe>
+            </div>
+        </div>
+    </div>
+   </div>
+</section>
+{% endif %}
+
+{% schema %}
+{
+    "name": {
+        "en": "Recipe video",
+        "de": "Recipe video",
+        "es": "Recipe video",
+        "fr": "Recipe video",
+        "pt-PT": "Recipe video"
+    },
+    "class": "homepage-section--video-wrapper wow",
+    "settings": [
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": {
+            "en": "Subheading",
+            "de": "Unterüberschrift",
+            "es": "Subencabezado",
+            "fr": "Sous-rubrique",
+            "pt-PT": "Subtítulo"
+          }
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": {
+              "en": "Heading",
+              "de": "Überschrift",
+              "es": "Encabezado",
+              "fr": "Rubrique",
+              "pt-PT": "Título"
+          }
+        },
+      {
+          "type": "richtext",
+          "id": "description",
+          "label": {
+              "en": "Description",
+              "de": "Description",
+              "es": "Description",
+              "fr": "Description",
+              "pt-PT": "Description"
+          }
+        },
+        {
+            "id": "url",
+            "type": "text",
+            "label": {
+                "en": "Video URL",
+                "de": "Video-URL",
+                "es": "URL del vídeo",
+                "fr": "URL de la vidéo",
+                "pt-PT": "URL do Vídeo"
+            }
+        },
+        {
+            "type": "checkbox",
+            "id": "autoplay",
+            "label": {
+                "en": "Autoplay",
+                "de": "Automatische Wiedergabe",
+                "es": "Reproducción automática",
+                "fr": "Lecture automatique",
+                "pt-PT": "Reprodução Automática"
+            },
+            "info": {
+                "en": "Video will be muted and some devices may prevent autoplay.",
+                "de": "Das Video wird stumm geschaltet, und einige Geräte verhindern möglicherweise die automatische Wiedergabe.",
+                "es": "El vídeo se silenciará y algunos dispositivos puede que eviten la reproducción automática.",
+                "fr": "La vidéo sera mise en sourdine et certains appareils peuvent empêcher la lecture automatique.",
+                "pt-PT": "O vídeo será repoduzido sem som e alguns dispositivos poderão impedir a auto-repodução."
+            },
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "loop",
+            "label": {
+                "en": "Loop",
+                "de": "Schleife",
+                "es": "En bucle",
+                "fr": "Boucle",
+                "pt-PT": "Repetição"
+            },
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "mute",
+            "label": {
+                "en": "Mute",
+                "de": "Stummschalten",
+                "es": "Silenciar",
+                "fr": "Muet",
+                "pt-PT": "Silenciar"
+            },
+            "default": false
+        },
+        {
+            "type": "select",
+            "id": "width_classes",
+            "label": {
+                "en": "Width",
+                "de": "Breite",
+                "es": "Ancho",
+                "fr": "Largeur",
+                "pt-PT": "Largura"
+            },
+            "default": "video-width--100",
+            "options": [
+                {
+                    "value": "video-width--100",
+                    "label": {
+                        "en": "100%",
+                        "de": "100 %",
+                        "es": "100%",
+                        "fr": "100 %",
+                        "pt-PT": "100 %"
+                    }
+                },
+                {
+                    "value": "video-width--75",
+                    "label": {
+                        "en": "75%",
+                        "de": "75 %",
+                        "es": "75%",
+                        "fr": "75 %",
+                        "pt-PT": "75 %"
+                    }
+                },
+                {
+                    "value": "video-width--50",
+                    "label": {
+                        "en": "50%",
+                        "de": "50 %",
+                        "es": "50%",
+                        "fr": "50 %",
+                        "pt-PT": "50 %"
+                    }
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": {
+                "en": "Recipe video",
+                "de": "Recipe video",
+                "es": "Recipe video",
+                "fr": "Recipe video",
+                "pt-PT": "Recipe video"
+            },
+            "category": {
+                "en": "Video",
+                "de": "Video",
+                "es": "Vídeo",
+                "fr": "Vidéo",
+                "pt-PT": "Vídeo"
+            }
+        }
+    ],
+    "disabled_on": {
+        "groups": ["header", "footer"]
+    }
+}
+{% endschema %}

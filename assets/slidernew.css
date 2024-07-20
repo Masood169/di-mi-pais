@@ -1,0 +1,125 @@
+@media only screen and (min-width: 1200px) and (max-width: 1400px){
+  .slidernew h3,
+.slidernew h2 {
+  font-size: 3em!important;
+}
+  .slideshow__link {
+  
+    padding-top: 40px;
+}
+}
+@media only screen and (min-width: 1040px) and (max-width: 1200px){
+  .slidernew h3,
+.slidernew h2 {
+  font-size: 2.8em!important;
+}
+  .slidernew p {
+  font-size: 1rem!important;
+  max-width: 380px!important;
+  
+}
+  .slideshow__link {
+  
+    padding-top: 80px;
+}
+}
+@media only screen and (min-width: 991px) and (max-width: 1040px){
+  .slidernew h3,
+.slidernew h2 {
+  font-size: 2.8em!important;
+}
+  .slidernew p {
+  font-size: 1rem!important;
+  max-width: 380px!important;
+  
+}
+  .slideshow__link {
+  
+    padding-top: 120px;
+}
+}
+@media only screen and (min-width: 770px) and (max-width: 991px){
+  .slidernew h3,
+.slidernew h2 {
+  font-size: 2.4em!important;
+}
+  .slidernew p {
+  font-size: 1rem!important;
+  max-width: 255px!important;
+  
+}
+  .slideshow__link {
+    padding-top: 100px;
+}
+}
+@media only screen  and (max-width: 770px){
+
+.slideshow-mobile-image-content {
+    margin: 0 5%!important;
+}
+  .slidernew p{
+    display:none;
+  }
+.slidernew h2 {
+  font-size: 1.7em!important;
+  color:#fff!important;
+    line-height: initial!important;
+}
+  .slidernew h2  a{
+  color:#fff!important;
+}
+    .slidernew h3 {
+  font-size: 1.7em!important;
+  color: #fff!important;
+  line-height: initial!important;
+  margin-top: 50px!important;
+ 
+}
+  .slidernew p {
+  font-size: 1.1rem!important;
+  max-width: 100%!important;padding-bottom:20px;
+  
+}
+.slider-caption{
+  padding:20px!important;
+}
+  .slidernew .btn{
+   font-weight: 900 !important;
+  font-size: 1.2em !important;
+  font-family: "Barlow Condensed" !important;
+  padding: 2px 18px;
+  line-height: initial;    margin-top: 40px;
+  }
+}
+.slidernew h3,
+.slidernew h2 {
+  font-weight: 900;
+  font-size: 3.5em;
+  line-height: initial;
+}
+.slidernew h2 {
+  background: #de1d09;
+  display: inline-block;
+  padding: 0 10px;
+}
+.slidernew p {
+  line-height: initial;
+  font-size: 1.2rem;
+  max-width: 470px;
+  margin: 20px 0;
+      text-align: start;
+    font-weight: 600;
+    font-family: 'Barlow Condensed';
+}
+.slidernew .btn {
+  border-radius:10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px!important;
+}
+@media only screen  and (min-width: 770px){
+.slidernew .btn {
+  font-weight: 900 !important;
+  font-size: 2.4em !important;
+  font-family: "Barlow Condensed" !important;
+  padding: 2px 18px;
+  line-height: initial;
+}}

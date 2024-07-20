@@ -1,0 +1,73 @@
+{{ 'about-page.css' | asset_url | stylesheet_tag }}
+
+
+
+{% schema %}
+{
+  "name": "About Page",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "about_info",
+      "name": "About Info",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Título",
+          "id": "about_title",
+          "default": "About Us"
+        },
+        {
+          "type": "richtext",
+          "label": "Content",
+          "id": "content"
+          
+        },
+        
+       
+        {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "about_image"
+          
+        },
+         {
+          "type": "image_picker",
+          "label": "Footer Image",
+          "id": "footer_image"
+          
+        }
+        
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<section class="curve">
+  
+</section>
+<section class="section-container-about">
+  
+<div class="about-page-container">
+  {% for block in section.blocks %}
+    {% if block.type == 'about_info' %}
+      <div class="image-page-info" style="background:url('{{ block.settings.about_image | image_url }}');background-position: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;">
+    <div class="alto-img"></div>
+  </div>
+      <div class="content-page-info">
+        <h2>{{ block.settings.about_title }}</h2>
+      <div class="info-block">
+        <p>
+          {{ block.settings.content }}
+        </p>
+      </div>
+      
+      </div>
+    
+    {% endif %}
+  {% endfor %}
+</div>
+</section>

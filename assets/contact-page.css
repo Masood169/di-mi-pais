@@ -1,0 +1,136 @@
+
+
+ .contact-page-info strong {
+     font-size: 1.6em;
+     text-transform: uppercase;
+     color: #f89801;
+     font-weight: 800;
+}
+ .contact-page-info a{
+     text-decoration:none;
+}
+ .contact-page-info strong, .contact-page-info p {
+     margin: 0 15px;
+}
+ .contact-page-container {
+     display: flex;
+     flex-wrap: wrap;
+     max-width: 1000px;
+     margin: 0 auto;
+     border-radius: 20px;
+     position:relative;
+     z-index:1;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+ .contact-page-info {
+     font-family: 'Barlow Condensed';
+     width: 40%;
+     padding: 0 0 0 30px;
+     display: flex;
+     background-color: #fff;
+     border-radius: 20px 0 0 20px;
+     flex-direction: column;
+     justify-content: center;
+}
+ .contact-page-info p {
+     font-size: 1.3em;
+     line-height: normal;
+     padding: 0;
+     color: #de1d09;
+}
+ .info-block p {
+     font-weight: 800;
+     text-align: center;
+     margin: 40px 0;
+}
+ .contact-page-info h2 {
+     color: #de1d09;
+     font-weight: 800;
+     margin-bottom:20px;
+     font-size:2.3em;
+}
+ .contact-page-form-container {
+     width: 60%;
+     border-radius: 0 20px 20px 0;
+     padding: 30px;
+    background:#de1d09;
+    color:#fff;
+}
+ .contact-page-form-container h2 {
+    border-bottom: 2px solid #fff;
+    font-weight: 800;
+    text-align: center;
+    font-size: 3.4em;
+    max-width: 85%;
+    margin: 25px auto;
+}
+ .contact-page-form {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-gap: 10px;
+}
+ .contact-page-form label {
+     display: block;
+     font-weight: bold;
+}
+ .contact-page-form input, .contact-page-form textarea {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+}
+ .contact-page-form button {
+     background-color: #4CAF50;
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+}
+ .social-icons {
+     list-style: none;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+}
+ .social-icons li {
+     margin: 0 10px;
+}
+ .social-icons a {
+      color: #de1d09;
+     font-size: 1.5em;
+}
+ @media (min-width: 0px) and (max-width: 569px){
+   .contact-page-info h2{
+     font-size: 1.8em;
+   }
+   .contact-page-info strong {
+    font-size: 1.4em;}
+   .contact-page-info p {
+    font-size: 1.1em;}
+   .contact-page-form-container h2 {
+   
+    font-size: 2.6em;
+    max-width: 100%!important;}
+ }
+
+ @media (max-width: 1024px) {
+     .contact-page-info, .contact-page-form-container {
+         width: 100%;
+       border-radius:20px;
+       padding:25px!important;
+    }
+   .contact-page-container{
+     max-width:600px;
+     flex-direction: column-reverse;
+      
+   }
+   
+}
+ @media (max-width: 600px) {
+   .contact-page-container{
+     
+      margin:20px;
+   }
+ }
+ 

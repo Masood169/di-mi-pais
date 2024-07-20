@@ -1,0 +1,334 @@
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+ {% stylesheet %}
+   .recipes-container{
+     margin:5% auto;
+   }
+  .recipes-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(5,minmax(200px,1fr));
+    gap: 20px;
+  }
+  .recipes-grid > div, .recipes-slides div.recipe-slide {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .recipes-grid > div p.recipe-title, .recipes-slides > div p.recipe-title {
+    font-weight: 600;
+    margin:0px;
+    line-height:1em;
+    color: white;
+  }
+
+.button-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.button-checkbox label {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #f0f0f0;
+    border: 0px solid #ccc;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+  user-select: none;
+}
+
+.button-checkbox input[type="checkbox"]:checked + label {
+  background-color: #202124;
+  color: #fff;
+}
+div#recipes-slides {
+    overflow: hidden;
+}
+.button-checkbox input[type="checkbox"]:checked:active + label {
+  background-color: #202124;
+}
+
+.filter {
+    display: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: absolute;
+    width: 100%;
+    right: 0px;
+    max-width: 710px;
+    min-width: 430px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 5px 15px -10px #222;
+    border-radius: 10px;
+    justify-content: center;
+  z-index:3;
+}
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px;
+}
+  #recipes-slides {
+  position: relative;
+}
+
+#recipes-slides::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.7) 100%);*/
+  
+    z-index: 2;
+
+  pointer-events: none; /* Esto permitirá que los clics pasen a través del pseudo-elemento */
+  
+}
+   
+
+   
+.carousel-overlay {
+    position: absolute;
+    width: 100%!important;
+    height: 100%;
+    margin-left: -20px;
+    margin-bottom: -20px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgb(0 0 0 / 81%) 100%);
+transform: translateY(100px);
+  transition:all 0.31s ease;
+}
+
+
+
+   
+ @media (max-width:700px) {
+   .recipes-heading > div:nth-child(2) {
+       display:none;
+     }
+ }
+{% endstylesheet %}
+
+<style>
+
+  .filter-trigger img {
+    width: 30px;
+}
+.filter-trigger {
+    display: flex;
+    cursor: pointer;
+    gap: 10px;
+    align-items: center;
+  color: #f89800;
+}
+  span.redbox, h2.redbox {
+    background: #de1d09;
+    display: inline-block;
+    padding: 0 10px;
+  color:white;
+}
+
+  {% for article in blogs.recipes.articles %}
+  #art-id-{{ article.id }}:hover .carousel-overlay {
+    transform: translateY(0px);
+  }
+{% endfor %} 
+  .recipe-slide > a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+</style>
+
+
+<div class="container recipes-container">
+  <div class="recipes-heading">
+    <div><h2 class="wow" style="color:#de1d09; font-size: 3em; line-height: 60px; margin-bottom: 65px;">{{ section.settings.section_title }}</h2></div>
+    <div style="position:relative;">
+      <div class="filter-trigger"><h3>FILTER</h3><img aria-hidden="true" alt="setting lines" src="{{ 'setting-lines.png' | asset_img_url }}"></div>
+      <div class="filter"></div>
+    </div>
+  </div>
+  <div id="recipes-slides">
+    <div class="recipes-slides owl-carousel">
+      {% for article in blogs.recipes.articles %}
+        <div class="recipe-slide" id="art-id-{{ article.id }}" style="background-image:url({{ article.image | image_url }});" data-ingredient="{% for tag in article.tags %}{{ tag }}{% unless forloop.last %},{% endunless %}{% endfor %}">
+          <div class="carousel-overlay"></div>
+          <a style="text-decoration:none; z-index:1;" href="{{ article.url }}">
+            <p class="recipe-title">{{ article.title }}</p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div id="recipes-grid" class="recipes-grid" style="display: none;">
+  {% for article in blogs.recipes.articles %}
+    <div class="recipe" style="background-image:url({{ article.image | image_url }});" data-ingredient="{% for tag in article.tags %}{{ tag }}{% unless forloop.last %},{% endunless %}{% endfor %}">
+      <a style="text-decoration:none;" href="{{ article.url }}">
+        <p class="recipe-title">{{ article.title }}</p>
+      </a>
+    </div>
+  {% endfor %}
+  </div>
+</div>
+
+    
+	
+
+<script>
+
+const filterTrigger = document.querySelector('.filter-trigger');
+const filter = document.querySelector('.filter');
+
+function toggleFilter() {
+  filter.style.display = filter.style.display === 'flex' ? 'none' : 'flex';
+}
+
+document.addEventListener('click', function(event) {
+  const targetElement = event.target;
+
+  if (!filter.contains(targetElement) && !filterTrigger.contains(targetElement)) {
+    filter.style.display = 'none';
+  }
+});
+
+filterTrigger.addEventListener('click', toggleFilter);
+
+
+
+  
+ let addedTags = new Set();
+
+  function generateCheckbox(tag) {
+    if (tag.trim() !== '' && !addedTags.has(tag)) {
+      const filterDiv = document.querySelector('.filter');
+      const checkboxDiv = document.createElement('div');
+      checkboxDiv.classList.add('button-checkbox');
+
+      const checkboxInput = document.createElement('input');
+      checkboxInput.type = 'checkbox';
+      checkboxInput.id = `checkbox-${tag}`;
+      checkboxInput.addEventListener('change', handleCheckboxChange);
+
+      const checkboxLabel = document.createElement('label');
+      checkboxLabel.setAttribute('for', `checkbox-${tag}`);
+      checkboxLabel.textContent = tag;
+
+      checkboxDiv.appendChild(checkboxInput);
+      checkboxDiv.appendChild(checkboxLabel);
+
+      filterDiv.appendChild(checkboxDiv);
+
+      addedTags.add(tag);
+    }
+  }
+
+  function handleCheckboxChange() {
+    const checkedTags = new Set();
+    const checkboxes = document.querySelectorAll('.button-checkbox input[type="checkbox"]:checked');
+
+    checkboxes.forEach(checkbox => {
+      const tag = checkbox.parentElement.textContent.trim();
+      checkedTags.add(tag);
+    });
+
+    const recipesSlides = document.getElementById('recipes-slides');
+    const recipesGrid = document.getElementById('recipes-grid');
+
+    if (checkedTags.size === 0) {
+      // Si no hay checkboxes seleccionados, mostrar .recipes-slides y ocultar .recipes-grid
+      recipesSlides.style.height = 'auto';
+      recipesGrid.style.display = 'none';
+    } else {
+      // Mostrar .recipes-grid y ocultar .recipes-slides
+      recipesSlides.style.height = '0px';
+      recipesGrid.style.display = 'grid';
+    }
+
+    // Filtrar los elementos .recipe según los tags seleccionados
+    const recipeElements = document.querySelectorAll('.recipe');
+    recipeElements.forEach(recipeElement => {
+      const tagsString = recipeElement.getAttribute('data-ingredient');
+      const tagsArray = tagsString.split(',').map(tag => tag.trim());
+      const recipeShouldBeVisible = tagsArray.some(tag => checkedTags.has(tag));
+      recipeElement.style.display = recipeShouldBeVisible ? 'block' : 'none';
+    });
+  }
+
+  $(document).ready(function() {
+    const recipeElements = document.querySelectorAll('.recipe');
+    recipeElements.forEach(recipeElement => {
+      const tagsString = recipeElement.getAttribute('data-ingredient');
+      const tagsArray = tagsString.split(',').map(tag => tag.trim());
+      tagsArray.forEach(tag => generateCheckbox(tag));
+    });
+  });
+
+
+  $('.recipes-slides').owlCarousel({
+     loop:true,
+     margin:10,
+     autoplay:true,
+     autoplayTimeout:4000,
+     responsive:{
+         0:{
+             items:1
+         },
+         600:{
+             items:3
+         },
+         1000:{
+             items:4
+         },
+       1200:{
+             items:5
+         }
+     }
+ })
+</script>
+
+{% schema %}
+  {
+    "name": "Recipes | V",
+    "tag": "section",
+    "class": "recipes_container",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Only apply for Blogs with category 'Recipes'"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_filter",
+        "label": "Show filter",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Heading text",
+        "default": "Recipes"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Recipes | V",
+        "category": "layout"
+      }
+    ]
+  }
+{% endschema %}

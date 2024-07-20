@@ -1,0 +1,249 @@
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+ {% stylesheet %}
+  #recipes-slider .recipes-container{
+     margin:5% auto;
+   }
+ #recipes-slider .recipes-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+ #recipes-slider .recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(5,minmax(200px,1fr));
+    gap: 20px;
+  }
+ #recipes-slider .recipes-grid > div, .recipes-slider div.recipe-slide {
+    width: 100%;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+   min-height: 60vh;
+  }
+#recipes-slider  .recipes-grid > div p.recipe-title, .recipes-slider > div p.recipe-title {
+    font-weight: 600;
+    margin:0px;
+    line-height:1em;
+    color: white;
+  }
+
+#recipes-slider .button-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+#recipes-slider .button-checkbox label {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #f0f0f0;
+    border: 0px solid #ccc;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+  user-select: none;
+}
+
+a:not(.btn):hover {
+  opacity:1 !important;
+}
+
+
+#recipes-slider .button-checkbox input[type="checkbox"]:checked + label {
+  background-color: #202124;
+  color: #fff;
+}
+div#recipes-slider {
+    overflow: hidden;
+}
+#recipes-slider .button-checkbox input[type="checkbox"]:checked:active + label {
+  background-color: #202124;
+}
+
+#recipes-slider .filter {
+    display: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: absolute;
+    width: 100%;
+    right: 0px;
+    max-width: 710px;
+    min-width: 430px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 5px 15px -10px #222;
+    border-radius: 10px;
+    justify-content: center;
+  z-index:3;
+}
+#recipes-slider .owl-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px;
+}
+  #recipes-slider {
+  position: relative;
+}
+
+#recipes-slider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  pointer-events: none; /* Esto permitirá que los clics pasen a través del pseudo-elemento */
+}
+
+   .slid-overlay {
+     position:absolute;
+     width:100% !important;
+     height:100%;
+    background-color: #00000029;
+    margin-left: -5%;
+    margin-bottom: -4%;
+   }
+
+
+#recipes-slider .recipe-slide {
+    justify-content: space-between;
+    padding: 4% 5%;
+    color: white !important;
+    position:relative;
+}
+   #recipes-slider .recipe-slide > div:nth-child(2) {
+     z-index:1;
+    width: 60%;
+}
+   @media (max-width:700px) {
+       #recipes-slider .recipe-slide > div {
+            width: 100% !important;
+        }
+     #recipes-slider .recipes-grid>div, .recipes-slider div.recipe-slide {
+          flex-direction: column;
+      }
+     .slid-overlay {
+          margin-left: 0;
+          margin-bottom: 0;
+      }
+  }
+
+   
+   a.slide-recipe-btn {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: red;
+    font-weight: 900;
+     z-index:1;
+}
+   .slide-recipe-title {
+     font-size: 3em; line-height: 60px; 
+   }
+
+
+span.redbox, h2.redbox {
+    background: #de1d09;
+    display: inline-block;
+    padding: 0 10px;
+  color:white;
+}
+{% endstylesheet %}
+
+
+<div class="container recipes-container">
+ 
+  <div id="recipes-slider">
+    <div class="recipes-slider owl-carousel">
+      {% for article in blogs.recipes.articles %}
+        {% unless forloop.index0 > 5 %}
+          <div class="recipe-slide" style="background-image:url({{ article.image | image_url }});" data-ingredient="{% for tag in article.tags %}{{ tag }}{% unless forloop.last %},{% endunless %}{% endfor %}">
+            <div class="slid-overlay"></div>
+            <div>
+              <h2 class="slide-recipe-title">{{ article.title }}</h2>
+              <p class="slide-recipe-excerpt">{{ article.excerpt }}</p>
+            </div>
+            <a style="text-decoration:none;width: auto;" class="slide-recipe-btn button" href="{{ article.url }}">
+              SEE MORE
+            </a>
+          </div>  
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+  
+</div>
+
+    
+	
+
+<script>
+
+  $('.recipes-slider').owlCarousel({
+     loop:true,
+     margin:10,
+     autoplay:true,
+     autoplayTimeout:4000,
+    items:1
+ })
+
+document.addEventListener("DOMContentLoaded", function () {
+  const titleElements = document.querySelectorAll("h2.slide-recipe-title");
+  
+  titleElements.forEach(titleElement => {
+    const titleText = titleElement.textContent;
+    const words = titleText.split(" ");
+    const halfWords = Math.ceil(words.length / 2);
+    const firstHalf = words.slice(0, halfWords).join(" ");
+    const secondHalf = words.slice(halfWords).join(" ");
+
+    titleElement.textContent = firstHalf;
+
+    const redBoxTitle = document.createElement("h2");
+    redBoxTitle.className = "slide-recipe-title redbox";
+    redBoxTitle.textContent = secondHalf;
+
+    const parentElement = titleElement.parentElement;
+    parentElement.insertBefore(redBoxTitle, titleElement.nextSibling);
+  });
+});
+
+
+
+</script>
+
+{% schema %}
+  {
+    "name": "Slider | Recetas",
+    "tag": "section",
+    "class": "recipes_container",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Only apply for Blogs with category 'Recipes'"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_filter",
+        "label": "Show filter",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Heading text",
+        "default": "Recipes"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Slider | Recetas",
+        "category": "layout"
+      }
+    ]
+  }
+
+{% endschema %}

@@ -1,0 +1,138 @@
+{{ 'contact-page.css' | asset_url | stylesheet_tag }}
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+{% schema %}
+{
+  "name": "Contact Page",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "contact_info",
+      "name": "Contact Info",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Título de Contacto",
+          "id": "contact_title",
+          "default": "Información de Contacto"
+        },
+        {
+          "type": "text",
+          "label": "Teléfono",
+          "id": "phone",
+          "default": "123-456-7890"
+        },
+        {
+          "type": "text",
+          "label": "Correo",
+          "id": "email",
+          "default": "ejemplo@example.com"
+        },
+        {
+          "type": "text",
+          "label": "Dirección",
+          "id": "address",
+          "default": "Calle Ejemplo #123"
+        },
+        {
+          "type": "text",
+          "label": "Information",
+          "id": "info",
+          "default": "V1501NW. 107 TH S.T, 101, MIAMI"
+        },
+        {
+          "type": "url",
+          "label": "URL de Facebook",
+          "id": "facebook_url"
+          
+        },
+        {
+          "type": "url",
+          "label": "URL de Whatsapp",
+          "id": "whatsapp_url"
+          
+        },
+        {
+          "type": "url",
+          "label": "URL de Youtube",
+          "id": "youtube_url"
+          
+        },
+        {
+          "type": "url",
+          "label": "URL de Instagram",
+          "id": "instagram_url"
+          
+        }
+        // Add more social icons as needed
+      ]
+    },
+    {
+      "type": "contact_form",
+      "name": "Contact Form",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Título de Contacto",
+          "id": "contact_form_title",
+          "default": "Formulario de Contacto"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+{% javascript %}
+/* Add any JavaScript code here (if needed) */
+{% endjavascript %}
+<section class="curve">
+  
+</section>
+<section class="section-container-contact">
+<div class="contact-page-container">
+  {% for block in section.blocks %}
+    {% if block.type == 'contact_info' %}
+      <div class="contact-page-info">
+        <h2>{{ block.settings.contact_title }}</h2>
+        <strong>Phone:</strong>
+      <a href="tel:{{ block.settings.phone }}">
+        <p style="font-weight:500;font-size: 2em;">{{ block.settings.phone }}</p></a>
+        <strong>Email:</strong>
+        <a href="mailto:{{ block.settings.email }}">
+          <p>{{ block.settings.email }}</p></a>
+        <strong>Address:</strong>
+          <p>{{ block.settings.address }}</p>
+      <div class="info-block">
+        <p>
+          {{ block.settings.info }}
+        </p>
+      </div>
+        <ul class="social-icons">
+          {% if block.settings.facebook_url != blank %}
+            <li><a target="_blank" aria-label="follow us on Facebook" href="{{ block.settings.facebook_url }}"><i class="fab fa-facebook"></i></a></li>
+          {% endif %}
+          
+          {% if block.settings.instagram_url != blank %}
+            <li><a target="_blank" aria-label="follow us on instagram" href="{{ block.settings.instagram_url }}"><i class="fab fa-instagram"></i></a></li>
+          {% endif %}
+      {% if block.settings.whatsapp_url != blank %}
+            <li><a target="_blank" aria-label="follow us on whatsapp" href="{{ block.settings.whatsapp_url }}"><i class="fab fa-whatsapp"></i></a></li>
+          {% endif %}
+      {% if block.settings.youtube_url != blank %}
+            <li><a target="_blank" aria-label="follow us on youtube" href="{{ block.settings.youtube_url }}"><i class="fab fa-youtube"></i></a></li>
+          {% endif %}
+          <!-- Add more social icons as needed -->
+        </ul>
+      </div>
+    {% elsif block.type == 'contact_form' %}
+      <div class="contact-page-form-container">
+        <h2>{{ block.settings.contact_form_title }}</h2>
+        <div class="powr-form-builder" id="8755a312_1690237399"></div><script src="https://www.powr.io/powr.js?platform=shopify"></script>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+</section>

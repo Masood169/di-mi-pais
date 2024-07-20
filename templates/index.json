@@ -1,0 +1,570 @@
+{
+  "wrapper": "div.index-sections",
+  "sections": {
+    "1fb39893-1854-47be-b2a3-291fecd22d17": {
+      "type": "image--slideshow",
+      "blocks": {
+        "ba8a3ee3-b67f-45df-8596-9799ddcca412": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lata1_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/mobile_cb80fbee-ad60-4c60-9a25-0f8be60477b5.png",
+            "subheading": "THE BEST OF",
+            "title": "de mi país",
+            "text": "<p>Find the best flavors in De Mi País, a unique experience that combine the best ingredients and the joy of the latin spirit<\/p>",
+            "button_text": "Buy now!",
+            "link": "https:\/\/demipais.com\/search?type=article%2Cproduct%2Cpage&q=canned+juice",
+            "caption-background": "rgba(0,0,0,0)",
+            "caption-text": "#ffffff",
+            "button-text": "#de1d09",
+            "button-background": "#ffffff",
+            "horizontal-alignment": "left",
+            "vertical-alignment": "middle"
+          }
+        },
+        "template--15517013966901__1fb39893-1854-47be-b2a3-291fecd22d17-16861719307bb5926b-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-gembos_0774caee-5fa0-45b2-aade-5d9d1009ec33.png",
+            "mobile_image": "shopify:\/\/shop_images\/gembos-mobile.png",
+            "subheading": "THE BEST OF",
+            "title": "de mi país",
+            "text": "<p>Find the best flavors in De Mi País, a unique experience that combine the best ingredients and the joy of the latin spirit<\/p>",
+            "button_text": "Buy now!",
+            "link": "https:\/\/demipais.com\/search?type=article%2Cproduct%2Cpage&q=gembos",
+            "caption-background": "rgba(0,0,0,0)",
+            "caption-text": "#ffffff",
+            "button-text": "#de1d09",
+            "button-background": "#ffffff",
+            "horizontal-alignment": "left",
+            "vertical-alignment": "middle"
+          }
+        },
+        "b14ab2e7-549e-4cff-9b1b-8e80654f0ac1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/aloe-slider.png",
+            "mobile_image": "shopify:\/\/shop_images\/aloemobile.png",
+            "subheading": "THE BEST OF",
+            "title": "de mi país",
+            "text": "<p>Find the best flavors in De Mi País, a unique experience that combine the best ingredients and the joy of the latin spirit<\/p>",
+            "button_text": "Buy now!",
+            "link": "https:\/\/demipais.com\/search?type=article%2Cproduct%2Cpage&q=aloe+vera+drink",
+            "caption-background": "rgba(0,0,0,0)",
+            "caption-text": "#ffffff",
+            "button-text": "#de1d09",
+            "button-background": "#ffffff",
+            "horizontal-alignment": "left",
+            "vertical-alignment": "middle"
+          }
+        },
+        "47e4f09f-ae24-4b12-a8b1-1198bf1b3244": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/demipais-slider.png",
+            "mobile_image": "shopify:\/\/shop_images\/bannersmobile.png",
+            "subheading": "THE BEST OF",
+            "title": "de mi país",
+            "text": "<p>Find the best flavors in De Mi País, a unique experience that combine the best ingredients and the joy of the latin spirit<\/p>",
+            "button_text": "Buy now!",
+            "link": "https:\/\/demipais.com\/collections\/condimentos",
+            "caption-background": "rgba(0,0,0,0)",
+            "caption-text": "#ffffff",
+            "button-text": "#de1d09",
+            "button-background": "#ffffff",
+            "horizontal-alignment": "left",
+            "vertical-alignment": "middle"
+          }
+        },
+        "b4e2731b-1f79-49b4-9271-e311c377416c": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/combo-2-banner-destkop.png",
+            "mobile_image": "shopify:\/\/shop_images\/banner-combo-1.png",
+            "subheading": "The best combos",
+            "title": "have arrived",
+            "text": "<p>Now we have the best combos and prices available for you.<\/p>",
+            "button_text": "Buy now!",
+            "link": "shopify:\/\/products\/combo-snacks",
+            "caption-background": "rgba(0,0,0,0)",
+            "caption-text": "#ffffff",
+            "button-text": "#de1d09",
+            "button-background": "#ffffff",
+            "horizontal-alignment": "left",
+            "vertical-alignment": "middle"
+          }
+        },
+        "f538b231-d1fc-4b46-bf22-423f47961f37": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-combo-2-destkop_5d7cc002-d0a3-44be-980d-a69f4db6c505.png",
+            "mobile_image": "shopify:\/\/shop_images\/mobile-banner-combo-2_ff6d54f3-f312-4296-9d22-07ea0e590f0f.png",
+            "subheading": "The best combos",
+            "title": "have arrived",
+            "text": "<p>Now we have the best combos and prices available for you.<\/p>",
+            "button_text": "Buy now!",
+            "link": "shopify:\/\/products\/combo-tipico",
+            "caption-background": "rgba(0,0,0,0)",
+            "caption-text": "#ffffff",
+            "button-text": "#de1d09",
+            "button-background": "#ffffff",
+            "horizontal-alignment": "left",
+            "vertical-alignment": "middle"
+          }
+        }
+      },
+      "block_order": [
+        "ba8a3ee3-b67f-45df-8596-9799ddcca412",
+        "template--15517013966901__1fb39893-1854-47be-b2a3-291fecd22d17-16861719307bb5926b-0",
+        "b14ab2e7-549e-4cff-9b1b-8e80654f0ac1",
+        "47e4f09f-ae24-4b12-a8b1-1198bf1b3244",
+        "b4e2731b-1f79-49b4-9271-e311c377416c",
+        "f538b231-d1fc-4b46-bf22-423f47961f37"
+      ],
+      "custom_css": [
+        ".slider-pauseplay {display: none;}"
+      ],
+      "settings": {
+        "slider-animation": "slide",
+        "slider-width": "full-width",
+        "show-slide-full-screen": false,
+        "slider-slide-time": 5,
+        "caption-heading-size": 50,
+        "show-slide-dots": false,
+        "show-slide-arrows": false,
+        "slider-navigation--color": "#f89801",
+        "overlay": false,
+        "bgsliderglobal": "shopify:\/\/shop_images\/bg-new-demipais.png"
+      }
+    },
+    "collection-list": {
+      "type": "collection--collection-list",
+      "blocks": {
+        "collection-list-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bebidas",
+            "image_collection": "shopify:\/\/shop_images\/ASSETS-07.png"
+          }
+        },
+        "c9ce4d90-cb27-40e0-81ed-ce06b5d3a44f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "snacks",
+            "image_collection": "shopify:\/\/shop_images\/ASSETS-05.png"
+          }
+        },
+        "collection-list-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "condimentos",
+            "image_collection": "shopify:\/\/shop_images\/ASSETS-06.png"
+          }
+        },
+        "54ca625b-83e3-4846-b89f-1f9d7703a51c": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bread-semitas",
+            "image_collection": "shopify:\/\/shop_images\/ASSETS-08.png"
+          }
+        },
+        "collection-list-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "miscellaneous-miscelaneo",
+            "image_collection": "shopify:\/\/shop_images\/MISCELLANEOUS-01_1.png"
+          }
+        },
+        "d3a27857-e61a-4083-833c-d72976eddfb8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "combos",
+            "image_collection": "shopify:\/\/shop_images\/icono_combo_movil_ajustado_-01_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "collection-list-0",
+        "c9ce4d90-cb27-40e0-81ed-ce06b5d3a44f",
+        "collection-list-2",
+        "54ca625b-83e3-4846-b89f-1f9d7703a51c",
+        "collection-list-1",
+        "d3a27857-e61a-4083-833c-d72976eddfb8"
+      ],
+      "custom_css": [
+        "article {width: 100%; overflow: hidden;}",
+        "@media (max-width: 1000px) {.title-bar h2 {font-size: 2.4em; line-height: 50px; text-align: center; } .type-subheading a {font-size: 1.5em; line-height: 25px; letter-spacing: 0; }}",
+        "@media (min-width: 1000px) {.title-bar h2 {font-size: 4em; line-height: 70px; } .type-subheading a {font-size: 1.1em; line-height: 25px; letter-spacing: 0; }}",
+        "h2 {position: relative; z-index: 1; color: #e01d09; text-align: left; font-weight: 900;}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Categories"
+      }
+    },
+    "c582f1fd-4231-4c46-b30d-a2ac38576a05": {
+      "type": "lateral-image",
+      "settings": {
+        "extra-img": "shopify:\/\/shop_images\/img-section-textand-image.png",
+        "text-color": "#000000",
+        "background-color": "rgba(0,0,0,0)",
+        "horizontal-alignment": "right",
+        "subheading": "10",
+        "title": "OFF",
+        "text": "<p>at checkout<\/p>",
+        "text2": "<p><strong>Available nationwide<\/strong><\/p>",
+        "button_link": "",
+        "button_label": ""
+      }
+    },
+    "beb5ff3d-3b24-49eb-b2ed-ae22b57aee94": {
+      "type": "text-with-imageextra",
+      "custom_css": [
+        "h3 {font-weight: 700; color: #f5cd00; font-size: 2.4em; line-height: 40px; text-align: center; letter-spacing: 0; margin-bottom: 30px;}",
+        "h2 {font-weight: 900; font-size: 1.4em; line-height: normal;}",
+        "@media screen and (max-width: 600px) {h2 {font-size: 2em; line-height: 36px; } h3 {font-size: 1.5em; line-height: inherit; }}"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/bg-section-text-and-image.png",
+        "extra-img": "shopify:\/\/shop_images\/demipais-promotion_1.png",
+        "text-color": "#ffffff",
+        "background-color": "rgba(0,0,0,0)",
+        "horizontal-alignment": "left",
+        "subheading": "CAN’T DECIDE A FLAVOR?",
+        "title": "TRY OUT THE RECOMMENDATION OF THE MONTH",
+        "text": "",
+        "button_link": "shopify:\/\/collections\/all",
+        "button_label": "Shop Now!"
+      }
+    },
+    "4ab16585-d233-4bf1-9236-83653ceb4235": {
+      "type": "logoslider",
+      "blocks": {
+        "45877586-aac8-4cdc-ad0d-4fbbb4ee6800": {
+          "type": "single_brand",
+          "settings": {
+            "brand_image": "shopify:\/\/shop_images\/cta-2-demipais_1.jpg",
+            "url": "https:\/\/demipais.com\/products\/yogu-aloe-strawberry-16-9-fl-oz?_pos=1&_psq=yogu&_ss=e&_v=1.0"
+          }
+        },
+        "b20b828e-4d7f-41c6-96b1-2568e7040c63": {
+          "type": "single_brand",
+          "settings": {
+            "brand_image": "shopify:\/\/shop_images\/imagecta_1.jpg",
+            "url": "https:\/\/demipais.com\/products\/yogu-aloe-mango-16-9-fl-oz?_pos=3&_psq=yogu%20al&_ss=e&_v=1.0"
+          }
+        },
+        "10e5b6be-4239-4379-868f-d7132bbd80e9": {
+          "type": "single_brand",
+          "settings": {
+            "brand_image": "shopify:\/\/shop_images\/cta-image-1_1.jpg",
+            "url": "https:\/\/demipais.com\/products\/nectar-orange-carrot-juice-jugo-de-nectar-de-naranja-zanahoria-16-fl-oz?_pos=2&_psq=naranja&_ss=e&_v=1.0"
+          }
+        },
+        "5155ca93-a6b2-4cdd-ae09-1d737c4406dc": {
+          "type": "single_brand",
+          "settings": {
+            "brand_image": "shopify:\/\/shop_images\/BANNER.png",
+            "url": "https:\/\/www.instagram.com\/gembos_esp\/"
+          }
+        },
+        "be771218-84d2-4192-97fe-8ef53b11624e": {
+          "type": "single_brand",
+          "settings": {
+            "brand_image": "shopify:\/\/shop_images\/BANNER_ESPANA_MUESTRA-01_1_1.jpg",
+            "url": "https:\/\/www.instagram.com\/demipais_esp\/"
+          }
+        },
+        "0779bba9-0313-4523-9fd5-cf19128a562b": {
+          "type": "single_brand",
+          "settings": {
+            "brand_image": "shopify:\/\/shop_images\/combo_snack.jpg",
+            "url": "shopify:\/\/products\/combo-snacks"
+          }
+        },
+        "ea585337-d726-4341-a901-569004d35e53": {
+          "type": "single_brand",
+          "settings": {
+            "brand_image": "shopify:\/\/shop_images\/combo_tipico.jpg",
+            "url": "shopify:\/\/products\/combo-tipico"
+          }
+        }
+      },
+      "block_order": [
+        "45877586-aac8-4cdc-ad0d-4fbbb4ee6800",
+        "b20b828e-4d7f-41c6-96b1-2568e7040c63",
+        "10e5b6be-4239-4379-868f-d7132bbd80e9",
+        "5155ca93-a6b2-4cdd-ae09-1d737c4406dc",
+        "be771218-84d2-4192-97fe-8ef53b11624e",
+        "0779bba9-0313-4523-9fd5-cf19128a562b",
+        "ea585337-d726-4341-a901-569004d35e53"
+      ],
+      "settings": {
+        "brand_padding_top": 60,
+        "brand_padding_bottom": 100,
+        "brand_padding_top_xs": 40,
+        "brand_padding_bottom_xs": 40,
+        "brand_check": false,
+        "brand_bgcolor": "#ffffff"
+      }
+    },
+    "store-information-delivery-partners": {
+      "type": "store-information--delivery-partners",
+      "blocks": {
+        "3c37c38a-8612-4bb1-8654-84c5201d8ed0": {
+          "type": "custom_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gembos-chips_copy_2.png",
+            "link": ""
+          }
+        },
+        "b94a110b-1d4b-4a81-b492-a24049d10978": {
+          "type": "custom_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/superdeli-new_360x_81221d8c-6ace-49d3-8f1e-a83077bfffcf.png",
+            "link": ""
+          }
+        },
+        "7326907b-8681-4907-a5e1-61d5446b77a7": {
+          "type": "custom_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_12.38.47_PM.png",
+            "link": ""
+          }
+        },
+        "1ea8a062-c3b8-418c-96d5-bb9c57320322": {
+          "type": "custom_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/micafe-esoro_360x_e6beda2e-7161-4158-84df-4bb6872ba574.png",
+            "link": ""
+          }
+        },
+        "5d2a30ec-455f-41b8-a608-1a686d47da0d": {
+          "type": "custom_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jutiquile-cremas_360-2_8cdd08d6-0a02-4a49-98cb-0a04b6c2dd88.png",
+            "link": ""
+          }
+        },
+        "16e88d14-8212-44de-b24f-5392d8ed12ce": {
+          "type": "custom_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pamis-frijoles-logo.png",
+            "link": ""
+          }
+        },
+        "27d8dc57-898d-42a2-9f3e-084cc4719ad1": {
+          "type": "custom_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/colachita-new_300x300_38da6c79-a3e0-4728-982d-4ce18a32621a.png",
+            "link": ""
+          }
+        },
+        "3e8cccff-0b09-4e3b-9a72-1904ee055a5c": {
+          "type": "custom_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/galleta-margarita.png",
+            "link": ""
+          }
+        },
+        "90cdbcd9-9031-4d93-93b6-9da38deb809a": {
+          "type": "custom_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_12.38.34_PM.png",
+            "link": ""
+          }
+        },
+        "92be64fc-eb4a-42b8-a2f2-eab97c409b4c": {
+          "type": "custom_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2018-09-13_at_3.17.23_PM.png",
+            "link": ""
+          }
+        },
+        "87a552a1-a2e2-4f87-9e86-d5177939269c": {
+          "type": "custom_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rojitos-1.png",
+            "link": ""
+          }
+        },
+        "1582965e-3f29-4905-9cdc-7b156879a2b5": {
+          "type": "custom_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled-3_copy_360x_51d8b221-df78-4930-8a51-ea0d5351c8ae.png",
+            "link": ""
+          }
+        },
+        "5111bd43-c0c4-4c2e-aaa8-68a95292604a": {
+          "type": "custom_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/margarita-1_360x_bca9f44f-c48f-47b4-ac9f-21b6c38148a0.png",
+            "link": ""
+          }
+        },
+        "970a81e0-1125-49cc-8a00-d14b3d5516de": {
+          "type": "custom_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo_fresco_cuajada_360x_35341fa5-afaf-418e-8e6c-e667303374a4.png",
+            "link": ""
+          }
+        },
+        "070c3523-6715-4e6c-8db3-5c0d2484beb2": {
+          "type": "custom_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/avenamosh-new_300x300_c75ecda3-e50f-4429-98fe-470f2435c90b.png",
+            "link": ""
+          }
+        },
+        "9f365d5a-5cc8-4d88-8923-5e8144d1961c": {
+          "type": "custom_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_12.38.24_PM.png",
+            "link": ""
+          }
+        },
+        "07e1084f-beaa-4caf-bd2b-046af5aafd97": {
+          "type": "custom_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_12.38.13_PM.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "3c37c38a-8612-4bb1-8654-84c5201d8ed0",
+        "b94a110b-1d4b-4a81-b492-a24049d10978",
+        "7326907b-8681-4907-a5e1-61d5446b77a7",
+        "1ea8a062-c3b8-418c-96d5-bb9c57320322",
+        "5d2a30ec-455f-41b8-a608-1a686d47da0d",
+        "16e88d14-8212-44de-b24f-5392d8ed12ce",
+        "27d8dc57-898d-42a2-9f3e-084cc4719ad1",
+        "3e8cccff-0b09-4e3b-9a72-1904ee055a5c",
+        "90cdbcd9-9031-4d93-93b6-9da38deb809a",
+        "92be64fc-eb4a-42b8-a2f2-eab97c409b4c",
+        "87a552a1-a2e2-4f87-9e86-d5177939269c",
+        "1582965e-3f29-4905-9cdc-7b156879a2b5",
+        "5111bd43-c0c4-4c2e-aaa8-68a95292604a",
+        "970a81e0-1125-49cc-8a00-d14b3d5516de",
+        "070c3523-6715-4e6c-8db3-5c0d2484beb2",
+        "9f365d5a-5cc8-4d88-8923-5e8144d1961c",
+        "07e1084f-beaa-4caf-bd2b-046af5aafd97"
+      ],
+      "custom_css": [
+        "@media (max-width: 1000px) {.title-bar h2 {font-size: 2.4em; line-height: 50px; } .type-subheading a {font-size: 1.5em; line-height: 25px; }}",
+        "@media (min-width: 1000px) {.title-bar h2 {font-size: 4em; line-height: 70px; } .type-subheading a {font-size: 1.5em; line-height: 25px; }}",
+        "h2 {color: #f39301; text-align: center; font-weight: 900;}"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Banner2_1.jpg",
+        "background-color": "#ffffff",
+        "text-color": "#3a3a3a",
+        "partner-text-color": true,
+        "horizontal-alignment": "center",
+        "title": "OUR BRANDS",
+        "text": ""
+      }
+    },
+    "blog-blog-posts": {
+      "type": "blog--blog-posts",
+      "blocks": {
+        "a867de50-4c0c-4c8f-84cf-680f1950e1e3": {
+          "type": "blog",
+          "settings": {
+            "blog": "news",
+            "post_limit": 3,
+            "show_view_all": true
+          }
+        }
+      },
+      "block_order": [
+        "a867de50-4c0c-4c8f-84cf-680f1950e1e3"
+      ],
+      "custom_css": [
+        "@media (max-width: 1000px) {.title-bar h2 {font-size: 2.4em; line-height: 50px; } .type-subheading a {font-size: 1.5em; line-height: 25px; }}",
+        "@media (min-width: 1000px) {.title-bar h2 {font-size: 4em; line-height: 70px; }}",
+        "h2 {color: #e01d09; font-weight: 900;}",
+        ".article--background-image {display: none;}",
+        "a.btn {margin-top: 50px; font-weight: 800 !important; font-family: \"Barlow Condensed\" !important; border-radius: 10px; font-size: 1.5em !important; line-height: 30px;}",
+        "h3 {font-size: 1.3em; letter-spacing: 0;}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Our blog",
+        "show_author_name": false,
+        "show_dates": true,
+        "show_blog_images": true,
+        "imageSize": "portrait"
+      }
+    },
+    "search-block": {
+      "type": "search-block",
+      "custom_css": [
+        "@media (max-width: 1000px) {.title-bar h2 {font-size: 2.4em; line-height: 50px; } p {font-size: 1.4em; line-height: 30px; }}",
+        "@media (min-width: 1000px) {.title-bar h2 {font-size: 4em; line-height: 70px; } p {font-size: 2.2em; line-height: 75px; }}",
+        "h2 {text-align: center !important; font-weight: 900;}",
+        "p {font-family: \"Barlow Condensed\"; font-weight: 800; margin-bottom: 60px !important;}",
+        "#block-search-wrapper {border: none !important;}"
+      ],
+      "settings": {
+        "heading": "SEARCH YOUR FAVORITE PRODUCT",
+        "text": "<p>FIND THE PERFECT INGREDIENT<\/p>",
+        "text_color": "#ffffff",
+        "placeholder": "Search our store",
+        "background_image": "shopify:\/\/shop_images\/bg-busqueda-demipais_1.jpg",
+        "background_color": "#ffffff",
+        "enable_overlay": false
+      }
+    },
+    "product-featured-product": {
+      "type": "product--featured-product",
+      "disabled": true,
+      "custom_css": [
+        "@media (max-width: 1000px) {.title-bar h2 {font-size: 2.4em; line-height: 50px; }}",
+        "@media (min-width: 1000px) {.title-bar h2 {font-size: 4em; line-height: 70px; }}",
+        ".title-bar h2 {color: #e01d09; text-align: center; font-weight: 900;}",
+        "h2 {color: #f07e0e; font-family: \"Barlow Condensed\"; font-weight: 800; font-size: 2.5em;}",
+        "label {text-transform: uppercase;}",
+        "button#purchase {font-family: \"Barlow Condensed\" !important; font-weight: 900 !important; font-size: 1.5em !important; line-height: normal; color: #f07e0e; box-shadow: inset 0 0 0 1px #000;}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "GIVE THE GIFT OF GOOD TIMES",
+        "featured_product": "gift-card",
+        "tax_included": false,
+        "shipping_policy": false,
+        "show_discount": "hide",
+        "show_SKU": false,
+        "show_quantity_selector": true,
+        "show_smart_checkout": true,
+        "show_product_description": false,
+        "hide_out_of_stock": false,
+        "enable_video_loop": false
+      }
+    },
+    "newsletter-newsletter": {
+      "type": "newsletter--newsletter",
+      "custom_css": [
+        "input {background: #fff; border-color: #fff;}",
+        "button {background: #f5cd00; color: #e01d09; font-weight: 900 !important; font-family: \"Barlow Condensed\" !important; font-size: 1.3em !important;}"
+      ],
+      "settings": {
+        "subheading": "BE THE FIRST TO GET OUR PROMOTIONS AND RECIPES",
+        "title": "SIGN UP HERE!",
+        "newsletter_description": ""
+      }
+    }
+  },
+  "order": [
+    "1fb39893-1854-47be-b2a3-291fecd22d17",
+    "collection-list",
+    "c582f1fd-4231-4c46-b30d-a2ac38576a05",
+    "beb5ff3d-3b24-49eb-b2ed-ae22b57aee94",
+    "4ab16585-d233-4bf1-9236-83653ceb4235",
+    "store-information-delivery-partners",
+    "blog-blog-posts",
+    "search-block",
+    "product-featured-product",
+    "newsletter-newsletter"
+  ]
+}

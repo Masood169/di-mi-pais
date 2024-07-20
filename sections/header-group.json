@@ -1,0 +1,50 @@
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "settings": {
+        "enable": false,
+        "message_text": "Announce something here",
+        "message_link": "",
+        "notification-bar--background-color": "#2d2d2d",
+        "notification-bar--text-color": "#ffffff",
+        "social-enable": true
+      }
+    },
+    "header": {
+      "type": "header",
+      "custom_css": [
+        ".header-icon svg {height: 30px; width: 30px;}",
+        ".header-content--top-bar.sticky-hide {padding-top: 30px;}",
+        ".header-row a {font-family: \"Barlow Condensed\", sans-serif !important; font-weight: bold; font-size: 1.1em; line-height: initial;}",
+        ".header-wrapper .header-content {padding: 0 50px 0px;}",
+        "@media (max-width: 600px) {.mobile-logo-column img {max-width: 140px !important; }}",
+        "ul.nav.nav-pills {font-family: \"Barlow Condensed\"; font-size: 1.3em; font-weight: 700;}"
+      ],
+      "settings": {
+        "sticky_header": "enable",
+        "overlay_header": true,
+        "show_border": false,
+        "logo": "shopify:\/\/shop_images\/logodemipais.svg",
+        "logo_max_width": 200,
+        "logo-placement": "center",
+        "sticky_header_logo": false,
+        "search-expand": false,
+        "search-message": "Search...",
+        "icon-enable": true,
+        "cart-number": "quantity",
+        "show_currency_selector": true,
+        "show_locale_selector": true,
+        "main_linklist": "newmenu",
+        "top_bar_linklist": "language",
+        "show-sticky-top-bar": false
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

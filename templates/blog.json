@@ -1,0 +1,86 @@
+{
+  "sections": {
+    "c4ca0947-d2c6-40fc-a9f9-81da0617e9bc": {
+      "type": "curve",
+      "settings": {}
+    },
+    "a94951d3-a0c1-47e2-a04d-adbcfcd81f46": {
+      "type": "recipe--slideshow",
+      "settings": {
+        "show_filter": true,
+        "section_title": "Recipes"
+      }
+    },
+    "180c3f69-2bfc-4d40-ba80-a77a90aa1f85": {
+      "type": "recipes",
+      "settings": {
+        "show_filter": true,
+        "section_title": "TOP 10 RECIPES"
+      }
+    },
+    "8356a8d4-ca68-4166-a0cf-17d8df9503eb": {
+      "type": "text--rich-text",
+      "custom_css": [
+        "@media (max-width: 1000px) {.title-bar h2 {font-size: 2em; line-height: 50px; }}",
+        "@media (min-width: 1000px) {.title-bar h2 {font-size: 3em; line-height: 70px; }}",
+        "h2 {color: #e01d09; text-align:start;}"
+      ],
+      "settings": {
+        "width": "small",
+        "subheading": "",
+        "title": "All recipes",
+        "text": "",
+        "button_link": "",
+        "button_label": ""
+      }
+    },
+    "main": {
+      "type": "template--blog",
+      "custom_css": [
+        "h3 a {font-size: 1.3em; letter-spacing: 0; font-weight: 700; color: #e01d09 !important;}",
+        "img {width: 100%; height: 280px; object-fit: cover;}"
+      ],
+      "settings": {
+        "blog_layout": "grid",
+        "blog-posts-per-page": 12,
+        "show_author_name": false,
+        "show_dates": false
+      }
+    },
+    "750e7d4c-631d-47e4-b404-dd01191f74be": {
+      "type": "seach-block-custom",
+      "custom_css": [
+        ".predictive-search-group:nth-child(3) {display: none;}"
+      ],
+      "settings": {
+        "heading": "Looking for a recipe?",
+        "text": "<p>find the best dishes<\/p>",
+        "text_color": "#ffffff",
+        "placeholder": "Search our store",
+        "background_image": "shopify:\/\/shop_images\/bg-busqueda-demipais_1.jpg",
+        "background_color": "#ffffff",
+        "enable_overlay": false,
+        "title_cta": "WAFFLES DE AVENA",
+        "subtitle_cta": "Learn how to prepareperfect waffles with Avena Mosh in no time!",
+        "description_cta": "Tip: to give your waffles a unique touch add cinnamon De Mi País the mix be sheeten with honey",
+        "image_cta": "shopify:\/\/shop_images\/demipais-promotion_1.png",
+        "text_btn_cta": "See recipe",
+        "url_btn_cta": "shopify:\/\/blogs\/recipes\/avena-waffles"
+      }
+    },
+    "a06cb136-588b-4aff-8503-0e51a6afa13f": {
+      "type": "template--blog-header",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "c4ca0947-d2c6-40fc-a9f9-81da0617e9bc",
+    "a94951d3-a0c1-47e2-a04d-adbcfcd81f46",
+    "180c3f69-2bfc-4d40-ba80-a77a90aa1f85",
+    "8356a8d4-ca68-4166-a0cf-17d8df9503eb",
+    "main",
+    "750e7d4c-631d-47e4-b404-dd01191f74be",
+    "a06cb136-588b-4aff-8503-0e51a6afa13f"
+  ]
+}
